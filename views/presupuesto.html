@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequegotowe</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../favicon.png?=2v">
+</head>
+<body>
+
+      <!------------------------------ Contenedor principal de mi pagina ----------------------------------->
+
+    <div id="contenedor">
+
+        <img id="Banner" src="../assets/images/banner.png" alt="Banner de tequeños" >
+
+        <img id="backImage" src="../assets/images/tequeños7.jpg" alt="Logo">
+
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../views/productos.html">Galeria</a></li>
+                    <li><a href="#Presupuesto">Presupuesto</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                
+                 </ul>
+            </nav>
+
+        </header>
+
+          <!------------------------------ Titulo ----------------------------------->
+
+        <h1> ¡Solicita más información y presupuesto! </h1>
+
+          <!------------------------------ Parrafo introductorio para que llenen el formulario ----------------------------------->
+
+        <div id="presupuesto">
+
+            <p>En Tequegotowe, estamos comprometidos a ofrecerte los mejores productos y servicios adaptados a tus necesidades. Si deseas conocer más sobre nuestra amplia gama de productos o necesitas un presupuesto personalizado, por favor, completa el siguiente formulario con tu información. Nuestro equipo se pondrá en contacto contigo lo antes posible para responder a tus preguntas y ofrecerte la asistencia que necesites.
+
+            ¡Esperamos poder ayudarte a encontrar la solución perfecta para ti!</p>
+
+        </div>
+
+          <!------------------------------ Formulario ----------------------------------->
+
+        <form method="post" autocomplete="off" >
+            
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required autocomplete="off" >
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="info">Solicitar más información:</label>
+                    <textarea id="info" name="info" rows="6"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+
+                    <label for="terminos">Acepto que mis datos personales, incluidos mi nombre, apellido, correo electrónico y cualquier otra información que proporcione, 
+                    serán recopilados, almacenados y procesados de acuerdo con la política de privacidad de [Tequegotowe]. <br> <br> 
+                    Entiendo que esta información se utilizará exclusivamente para los fines especificados en dicha política, como el envío de 
+                    comunicaciones relacionadas con mis consultas y el cumplimiento de requisitos legales. También reconozco que tengo el derecho 
+                    de acceder, corregir y solicitar la eliminación de mis datos en cualquier momento, así como a ser informado sobre cualquier cambio 
+                    en esta política.</label>
+                </div>
+
+                <button type="submit" onclick="alert ('Estas seguro de que quieres enviar esta informacion')">Enviar</button>
+
+                <button type="reset" onclick="alert ('Estas seguro de que quieres rellenar el formulario de nuevo?')">Borrar</button>
+                
+        </form>
+
+        <!------------------------- Pie de pagina de mi website--------------------------------->
+
+        <footer>
+
+            <p>&copy; <span class="especial">Tequegotowe.com /</span> Todos los derechos reservados/</p>
+            <div>
+                <a href="#contact">Contacto/</a>
+                <a href="#privacy">Política de Privacidad/</a>
+                <a href="#terms">Términos de Servicio/</a>
+            </div>
+            <div>
+                <span class="especial">Síguenos en:</span>
+                <a href="https://www.instagram.com/tequegotowe/" target="_blank"><img class="logo" src="../assets/images/facebook.jpg" alt="">Facebook/</a>
+
+                <a href="https://www.instagram.com/tequegotowe/" target="_blank"> <img class="logo" src="../assets/images/twitter.jpg" alt="">Twitter/</a>
+
+                <a href="https://www.instagram.com/tequegotowe/" target="_blank"> <img class="logo" src="../assets/images/instagram.jpg" alt="">Instagram</a>
+            </div>
+
+        </footer>
+
+    </div>
+
+     <!------------------------- Aqui Termina mi contenedor principal--------------------------------->
+    
+</body>
+</html>

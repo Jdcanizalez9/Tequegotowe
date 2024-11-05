@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+    font-family:'Playwrite England SemiJoined';
+    src: url(../assets/fonts/PlaywriteGBS-Italic-VariableFont_wght.ttf)
+}
+
+#contenedor {
+    position: absolute;
+    margin: 0 ;
+    width: 100%;
+
+}
+
+.especial {
+
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1em;
+    font-style:normal;
+    line-height: 1.3;
+    text-indent: 30px;
+}
+
+h1 {     
+    font-family: 'Playwrite England SemiJoined', 'Times New Roman', Times, serif  ; 
+    text-align: center;   
+}
+
+/* Banner principal de mi pagina */
+
+#Banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;  
+}
+
+/* para que me banner se adapte a las pantallas */
+
+@media (max-width: 768px) {
+
+    #Banner {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;  
+    }
+
+
+}
+
+/* Imagen de fondo */
+
+#backImage {
+    width: 100vw; 
+    height: 100%;   
+    opacity: 0.3;
+    z-index:-1000 ;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.info1, .info2, .info3, header, footer {
+    position: relative;
+    z-index: 999;
+}
+
+/* Propiedades de mi barra de navegacion */
+nav {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #ffb74d;
+   border-radius: 5px;
+   border: 1px solid orangered; 
+   padding: 0 20px; 
+}
+
+nav ul {
+    font-family: 'Playwrite England SemiJoined', 'Times New Roman', Times, serif  ;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    margin: auto;   
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 80px;
+    padding: 8px;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7) ;    
+}
+
+nav ul li a:hover {
+    background-color: white; /* Cambia el fondo al pasar el mouse */
+    color: orange; /* Cambia el color del texto */
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column; 
+        height: auto;  
+    }
+
+    nav ul {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/*------------------------ Pagina de Inicio-------------------- */
+.imagen1 {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);    
+}
+
+.imagen2 {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.5);       
+}
+/*------------------------------ Primera Caja----------------------*/
+.info1 {   
+    margin: -40px 20px 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Parrafo adentro de la caja*/
+
+.info1 p{  
+    flex: 50% ;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;   
+}
+/* Imagen adentro de la caja*/
+
+.info1 #imagen2{
+    align-items: center;
+    justify-content: center;
+    flex: 30%;   
+}
+
+/*--------------------------- Segunda caja-------------------------*/
+.info2 {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    margin-top: -40px;
+}
+
+.info2 p {
+
+    font-size: 1em;    
+    display: flex ;
+    flex: 40% ;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+   
+}
+
+.info2 .imagen3{
+    display: flex;
+    flex: 20%;
+    align-items: center;
+    }
+
+/*--------------------------- Para que mis articulos sean Responsive-------------------------*/
+
+@media (max-width: 768px) {
+        .info1, .info2, .info3 {
+            flex-flow: column ;   
+        }
+    
+        .imagen1, .imagen2 {
+            width: 100%;
+            height: auto;
+        }
+        
+        .galeria1 {
+            display: flex;
+            flex-flow: column ;
+        }
+
+        .galeria1 .imagen2 {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+/*--------------------------- Tercera caja-------------------------*/
+
+.info3 {
+    margin-top: -30px ;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+}
+
+.galeria1 {
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px 20px 20px;        
+}
+
+/*---------------------- Pie de mi pagina-------------------------*/
+
+footer {
+    margin-top: auto;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+
+footer a {
+    text-decoration: none;     
+}
+
+footer a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.logo {
+    height: 13px;
+    width: 13px;
+}
+
+/*------------------------- Galeria -------------------------*/
+
+/*---------Medidas estandares de cada foto-----------------------*/
+
+.imagen3{
+    width: 100%;
+    height: 100% ;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);   
+}
+/*------------------------- GRID -------------------------*/
+    
+.galeria2 {
+    display: grid;
+    margin: 0px 30px 0 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px 80px ;  }
+
+/*---------------Texto descriptivo de los producto -----------*/
+#text1, #text2, #text3, #text4, #text5, #text6 {
+
+    width: 100%;
+    height: auto;
+    border: 4px dashed orange;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+.galeria2 p {
+
+    text-align: justify;
+}
+
+/*-----------------Hacer mi grid responsive basandome en lo leido en W3school------------------*/
+
+@media (max-width: 1024px) {
+    .galeria2 {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+        gap: 20px ;
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+        gap: 20px ;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria2 {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+        gap: 20px ;
+    }
+}
+
+/*-----------------FORMULARIO A RELLENAR------------------*/
+
+#contenedor form  {
+    width: 600px;
+    margin: 0 auto 100px auto;
+    padding: 20px;
+    border-radius: 8px;    
+}
+
+#presupuesto {
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: justify;
+}
+
+input[type="text"],input[type="email"],textarea {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+ }
+
+
+button {
+    width: 40%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto 28px auto 28px;
+    float: left;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*-----------------FORMULARIO Responsive------------------*/
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #contenedor form {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px; 
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: auto 10px 20px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
